@@ -1,0 +1,21 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Concert de Jazz",
+      "category": "Musique",
+      "price": 50,
+      "image": "https://via.placeholder.com/200",
+      "description": "Un concert de jazz exceptionnel."
+    },
+    {
+      "id": 2,
+      "name": "Exposition d'Art",
+      "category": "Art",
+      "price": 30,
+      "image": "https://via.placeholder.com/200",
+      "description": "Découvrez des œuvres modernes."
+    }
+  ],
+  "orders": []
+}
