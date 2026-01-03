@@ -1,0 +1,123 @@
+.events-page {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding-bottom: 48px;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+}
+
+.events-header {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.events-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.events-header p {
+  color: #6b7280;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 24px;
+  font-size: 18px;
+
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  padding: 0 16px;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #9ca3af;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #d1d5db;
+}
+
+.category-btn.active {
+  background-color: #4f46e5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Events Grid */
+.events-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* No Events Message */
+.no-events {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-header h2 {
+    font-size: 24px;
+  }
+
+  .search-container input {
+    max-width: 100%;
+  }
+
+  .category-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-header h2 {
+    font-size: 20px;
+  }
+}

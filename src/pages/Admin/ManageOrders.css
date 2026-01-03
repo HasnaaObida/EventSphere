@@ -1,0 +1,95 @@
+/* Container */
+.manage-orders-container {
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Header */
+.manage-orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.manage-orders-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Error message */
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table container for responsive scroll */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Table */
+.orders-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 600px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.orders-table th {
+  background-color: #1e293b;
+  color: white;
+  font-weight: 600;
+}
+
+.orders-table tr:last-child td {
+  border-bottom: none;
+}
+
+.orders-table tr:hover {
+  background-color: #f3f4f6;
+  transition: 0.2s;
+}
+
+/* Total Revenue */
+.total-revenue {
+  text-align: right;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 16px;
+  color: #032879;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .orders-table th,
+  .orders-table td {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .manage-orders-header h1 {
+    font-size: 22px;
+  }
+}

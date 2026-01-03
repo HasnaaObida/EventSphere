@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a20e6;
+  text-decoration: none;
+}
+
+/* Center links */
+.nav-center {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-center li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f2937;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-center li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #2a20e6;
+  transition: width 0.3s ease;
+}
+
+.nav-center li a:hover::after {
+  width: 100%;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Cart */
+.cart {
+  position: relative;
+  color: #1f2937;
+}
+
+.cart:hover {
+  color: #4f46e5;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Admin button */
+.admin-btn {
+  background-color: #2a20e6;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-center {
+    gap: 24px;
+  }
+
+  .navbar-right {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-center {
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .admin-btn, .cart {
+    padding: 6px 12px;
+  }
+}

@@ -2,19 +2,23 @@
   "events": [
     {
       "id": 1,
-      "name": "Concert de Jazz",
+      "name": "Concert Rock",
+      "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2",
       "category": "Musique",
       "price": 50,
-      "image": "https://via.placeholder.com/200",
-      "description": "Un concert de jazz exceptionnel."
+      "date": "2025-03-20",
+      "articles": 120,
+      "description": "Venez profiter d'une soirée rock inoubliable avec des groupes locaux et internationaux."
     },
     {
       "id": 2,
-      "name": "Exposition d'Art",
+      "name": "Exposition Art",
+      "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19",
       "category": "Art",
-      "price": 30,
-      "image": "https://via.placeholder.com/200",
-      "description": "Découvrez des œuvres modernes."
+      "price": 25,
+      "date": "2025-04-05",
+      "articles": 80,
+      "description": "Découvrez les œuvres d'art contemporaines dans une exposition unique rassemblant des artistes émergents."
     }
   ],
   "orders": []
